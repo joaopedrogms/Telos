@@ -195,7 +195,7 @@ const data = [ { "orgao": "Polícia Civil", "data":
 "valor": 5100.00,"status":"sucesso" }]
 
 //historia 1
-//console.log(`Quantidade total de repasses: ${data.length}`)
+console.log(`Quantidade total de repasses: ${data.length}`)
 
 //historia 2
 function separandoFalhasSucessos(info) {
@@ -284,7 +284,7 @@ const falhasSucessos = separandoFalhasSucessos(data)
 //Historia 2 - parte 1
 
 //Historia 2 - parte 1.1
-/*console.log(`Quantidade total de repasses bem sucedidos: ${falhasSucessos[1].length}`)
+console.log(`Quantidade total de repasses bem sucedidos: ${falhasSucessos[1].length}`)
 
 //Historia 2 - parte 1.2
 const sucessos = repassesGov(falhasSucessos[1])
@@ -300,11 +300,11 @@ let valorTotalRepassesSucessos = 0
 for (let i = 0; i < sucessos[1].length; i++) {
     console.log(`Órgão: ${sucessos[1][i][0]}; Soma valores repasses bem-sucedidos: ${sucessos[1][i][1]}`)
 }
-*/
+
 //Historia 2 - parte 2
 
 //Historia 2 - parte 2.1
-/*console.log(`Quantidade total de repasses mal sucedidos: ${falhasSucessos[0].length}`)
+console.log(`Quantidade total de repasses mal sucedidos: ${falhasSucessos[0].length}`)
 
 //Historia 2 - parte 2.2
 const falhas = repassesGov(falhasSucessos[0])
@@ -329,7 +329,7 @@ for (let i = 0; i < falhas[1].length; i++) {
 //Historia 2 - parte 2.6
 for (i = 0; i < motivosFalhas.length; i++) {
     console.log(`Motivo: ${motivosFalhas[i][0]}; Valor repasses: ${motivosFalhas[i][2]}`)
-}*/
+}
 
 //Historia 3
 
@@ -374,20 +374,6 @@ let datas = todasAsDatas(data)
 console.log("Datas: ")
 console.log(datas)
 
-/*function modificandoData (theDate) {
-    console.log(`theDate abaixo:`)
-    console.log(theDate)
-
-    let dataSplitada = theDate.split("/")
-    console.log(`Data splitada: ${dataSplitada}`)
-
-    for (i = 0; i < dataSplitada.length; i++) {
-        dataSplitada[i] = parseInt(dataSplitada[i])
-    }
-
-    console.log(`Retorno: ${dataSplitada}`)
-    return dataSplitada
-}*/
 
 for (i = 0; i < datas.length; i++) {
     let dataSplitada = datas[i].split("/")
